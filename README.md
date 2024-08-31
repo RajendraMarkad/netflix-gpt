@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+**NetflixGPT Setup Guide:**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. **Create React Project:**
+   - Run the command: `npx create-react-app netflix-gpt` to create a basic React project from scratch. This will install Webpack as the bundler (not Parcel) and also downloaded bunch of libraries/dependencies for us like Jest for testing.
+   - Remember to navigate into the project directory: `cd netflix-gpt`.
 
-## Available Scripts
+2. **Git Setup:**
+   - Download and log in to GitHub on your PC.
+   - Initialize Git: 
+     ```bash
+     git init
+     ```
+   - Link the remote repository:
+     ```bash
+     git remote add origin repo_link.git
+     ```
+   - For the initial commit:
+     ```bash
+     git add .
+     git commit -m "initial commit message"
+     git branch -M main
+     git push -u origin main
+     ```
+   - For subsequent changes:
+     ```bash
+     git add .
+     git commit -m "another message"
+     git push origin main
+     ```
+   - Alternatively, you can use the 3 commands provided github to push existing code to the repository.
 
-In the project directory, you can run:
+3. **Install Tailwind CSS:**
+   - Install Tailwind CSS and initialize it:
+     ```bash
+     npm install -D tailwindcss
+     npx tailwindcss init
+     ```
+   - Refer to the official Tailwind CSS installation guide for more details: [Tailwind CSS Installation](https://tailwindcss.com/docs/installation).
 
-### `npm start`
+4. **Install React Router:**
+   - Install the `react-router-dom` library:
+     ```bash
+     npm i -D react-router-dom
+     ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. **Form Handling:**
+   - Use the Formik library for creating and validating forms, especially for handling large forms efficiently.
